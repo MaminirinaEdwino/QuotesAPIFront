@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title{
+  @apply text-4xl font-semibold text-center m-8
+}
+.spinner{
+  @apply animate-spin w-full m-auto 
+}
+#search{
+  @apply w-full flex justify-center sticky top-4 z-10
+}
+#searchBar{
+  @apply m-auto w-28 h-10 rounded-2xl shadow-lg pl-4 pr-4 drop-shadow-2xl hover:border hover:border-blue-400 duration-500 mb-8 focus-within:w-9/12
+}
+article{
+  @apply border w-10/12 m-auto p-8 rounded-md shadow-lg mb-4 drop-shadow-lg transition-all animate-flip-down animate-duration-500
+}
+article .quote{
+  @apply mb-2
+}
+article .auteur{
+  @apply absolute right-8 italic text-sm font-semibold text-blue-400 mt-0
+}
+.addBox{
+  @apply fixed top-0  w-10 overflow-hidden h-10 hover:w-full hover:h-full hover:bg-white shadow-lg drop-shadow-lg duration-500 ease-out flex flex-col items-center z-20
+}
+
+
+span{
+  @apply block p-3 rounded-full sticky shadow-lg w-fit drop-shadow-lg
+}
+#addedAuthor, #addedQuote{
+  @apply w-9/12 h-10 shadow-lg drop-shadow-lg mb-2 rounded-3xl pl-3 pr-3
+}
+button{
+  @apply flex items-center justify-between p-1 w-16 rounded-3xl shadow-lg drop-shadow-lg bg-green-600 text-white font-semibold pl-2 pr-2 mt-2 h-10
+}
